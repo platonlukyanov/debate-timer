@@ -8,8 +8,8 @@ export default function Timer() {
 	const { timer, start, pause, reset, paused } = useGlobalTimer();
 
 	return <div>
-		<div className="mb-4">
-			<div className={`text-[12rem] h-[15rem] duration-300 ${paused ? " text-slate-400" : "text-slate-900"}`}>
+		<div className="mb-2 md:mb-4">
+			<div className={`text-[9rem] md:text-[12rem] h-[15rem] duration-300 ${paused ? " text-slate-400" : "text-slate-900"}`}>
 				{addLeadingZeros(minutes(timer))}:{addLeadingZeros(seconds(timer))}
 			</div>
 		</div>
